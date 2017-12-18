@@ -1687,13 +1687,13 @@
     <!-- Profiles -->
     <profiles>
         <!--
-          Name: JDK9
-          Descr: various workarounds activation for JDK9
+          Name: JDK9+
+          Descr: various workarounds activation for JDK9 and up
         -->
         <profile>
             <id>JDK9</id>
             <activation>
-                <jdk>9</jdk>
+                <jdk>[9,)</jdk> <!-- match 9+ -->
             </activation>
             <properties>
                 <modular.jdk.args>
